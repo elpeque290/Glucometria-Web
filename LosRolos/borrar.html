@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Remote style sheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    
+    <!-- Local style sheet relative to workspace folder -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Local style sheet relative to this file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Embedded style sheet -->
+    <style>
+        #content {
+            display: block;
+        }
+
+        .internal {
+            display: block;
+        }
+        
+este nos sirve para hacer el scroll bar mas bonito
+        body {
+  overflow: overlay;
+}
+
+.div1 {
+  background: grey;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+</style>
+</head>
+<body>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+         <li><a href="paciente.html">Registrar</a></li>
+         <li><a href="consultar.html">Consultar</a></li>
+         <li><a href="borrar.html">Borrar</a></li>
+         <li><a href="#">Modificar</a></li>
+      </ul>
+  
+    <!-- Label de  Titulo principal!-->
+    <div class="login-box">
+      <h2> BORRAR</h2>
+        
+        <form>
+           
+
+          <a style="margin: 25px" href="paciente.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Paciente 
+          </a>
+          <a style="margin: 25px" href="tutor.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Tutor 
+          </a>
+          <a style="margin: 25px" href="alimento.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Alimento
+          </a>
+          <a style="margin: 25px" href="medicamento.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Medicamento
+          </a>
+           
+          <div class=raya-division></div>
+          
+          <div class="table">
+            
+          <h3 style="color:rgb(255, 255, 255); ;"> ☢️ USUARIO A BORRAR ☢️</h3>
+          <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">ELIMINAR</a>  
+          <div class="usuario-box">
+            <label ></label>
+            
+            <select name="tipo de documento" id="lang">
+              <option value="">paciente-ELIMINAR </option>
+              <option value="">tutor-ELIMINAR</option>
+              <option value="">alimento-ELIMINAR</option>
+              <option value="">registroMedicamento-ELIMINAR</option>        
+            </select>
+        </div>
+<div></div>
+          
+        <div class="usuario-box">
+            <input name="" required="">
+            <label>ID movimiento</label>
+          </div>
+
+          
+          
+        <div class=raya-division></div>
+
+    </form>
+        
+        
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

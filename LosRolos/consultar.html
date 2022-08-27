@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Remote style sheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    
+    <!-- Local style sheet relative to workspace folder -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Local style sheet relative to this file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Embedded style sheet -->
+    <style>
+        #content {
+            display: block;
+        }
+
+        .internal {
+            display: block;
+        }
+        
+este nos sirve para hacer el scroll bar mas bonito
+        body {
+  overflow: overlay;
+}
+
+.div1 {
+  background: grey;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+</style>
+</head>
+<body>
+      <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+         <li><a href="paciente.html">Registrar</a></li>
+         <li><a href="consultar.html">Consultar</a></li>
+         <li><a href="borrar.html">Borrar</a></li>
+         <li><a href="#">Modificar</a></li>
+      </ul>
+  
+    <!-- Label de  Titulo principal!-->
+    <div class="login-box">
+      <h2> CONSULTAS</h2>
+        
+        <form>
+          <a style="margin: 25px" href="paciente.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Paciente 
+          </a>
+          <a style="margin: 25px" href="tutor.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Tutor 
+          </a>
+          <a style="margin: 25px" href="alimento.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Alimento
+          </a>
+          <a style="margin: 25px" href="medicamento.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Medicamento
+          </a>
+
+          <div class=raya-division></div>
+          
+          <div class="table">
+            
+          <h3 style="color:rgb(255, 255, 255); ;">Lista de usuario</h3>
+          <table>
+              <tr style="background-color: rgb(255, 255, 255);" >
+                  <th value="">Nombre</th>
+                  <th value="">Apellido </th>
+                  <th value="">telefono</th>
+                  <th value="">email</th>
+                  <th value="">tipo db</th>
+                  <th value="">tratamiento</th>
+                 
+                  <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+                
+
+              </tr>
+          </table>
+        </div>
+
+        <div class=raya-division></div>
+       
+        <div class="table">
+            
+            <h3 style="color:rgb(255, 255, 255); ;">Usuarios por tutor</h3>
+            <table>
+                
+        <tr style="background-color: rgb(255, 255, 255);" >
+                    
+            <th value="">Nombre</th>
+                    <th value="">Apellido </th>
+                
+                    <div class="usuario-box">
+                        <input type="" name="" required="">
+                        <label>Id tutor</label>
+                      </div>
+                      <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+                </tr>
+            </table>
+          </div>
+          <div class=raya-division></div>
+
+
+          <div class="table">
+            
+            <h3 style="color:rgb(253, 255, 255); ;">Carboidratos de alimento</h3>
+            <table>
+                
+        <tr style="background-color: rgb(255, 255, 255);" >
+                    
+            <th value="">Suma carboidratos</th>
+           
+                
+                    <div class="usuario-box">
+                        <input type="" name="" required="">
+                        <label style="color: rgb(255, 255, 255) ;">numero de documento</label>
+                      </div>
+
+                      <div class="table">
+                        <input type="datetime-local" name="" required="">
+                        <label style="color:rgb(255, 255, 255); ;">fecha hora alimento</label>
+                      </div>
+
+                      <a style="background-color: rgb(255,0,0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+                </tr>
+            </table>
+          </div>
+          <div class=raya-division></div>
+
+
+
+          <div class="table">
+            
+            <h3 style="color:rgb(255, 255, 255); ;">Historial Medicamento</h3>
+            <table>
+                
+        <tr style="background-color: rgb(255, 255, 255);" >
+                    
+            <th value="">Vida de administracion</th>
+            <th value="">Nombre medicamento</th>
+            <th value="">Dosis medicamento</th>
+                
+                    <div class="usuario-box">
+                        <input type="" name="" required="">
+                        <label>numero de documento</label>
+                      </div>
+
+                      
+
+                      <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+                </tr>
+            </table>
+          </div>
+          <div class=raya-division></div>
+
+
+
+          <div class="table">
+            
+            <h3 style="color:rgb(255, 255, 255); ;">Tutor paciente</h3>
+            <table>
+                
+        <tr style="background-color: rgb(255, 255, 255);" >
+                    
+            <th value="">ID tutor</th>
+            <th value="">ID paciente</th>
+            
+
+
+                      
+
+            <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+                </tr>
+            </table>
+          </div>
+          <div class=raya-division></div>
+
+
+          <div class="table">
+            
+            <h3 style="color:rgb(255, 255, 255); ;">Paciente VS  Tutor </h3>
+            <table>
+                
+        <tr style="background-color: rgb(255, 255, 255);" >
+                    
+            <th value="">ID tutor</th>
+            <th value=""> Documento tutor</th>
+            <th value="">Parentesco</th>
+            <th value="">Empresa</th>
+            <th value="">Documento paciente</th>
+            
+            <a style="background-color: rgb(255, 0, 0);" target="_blank" class="fcc-btn" href="">CONSULTA</a>  
+           
+
+                </tr>
+            </table>
+          </div>
+          <div class=raya-division></div>
+
+
+
+
+
+
+
+        </form>
+        
+        
+      </div>
+    
+      
+     
+      
+  
+
+
+
+</body>
+</html>
